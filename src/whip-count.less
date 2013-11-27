@@ -1,0 +1,106 @@
+@label 		: #fff;
+@legendLabel: #62bdce;
+@firmYea	: #00944f;
+@leanYea 	: #89c656; 
+@firmNay 	: #be1c32;
+@leanNay 	: #f36d6c;
+@unknown 	: #818286;
+@fili 		: darken(#818286, 10%);
+
+
+.wc-chart-wrap{
+
+	.wc-chart{ 
+		position:relative;
+		width: 100%;
+		color:@label;
+		.wc-label{
+			font-size: 10px;
+		}
+		.wc-house{
+			width:100%; 
+			margin-bottom: 20px;
+		}
+		.position{
+			background-color: @label;
+			height:30px;
+		}
+		.firmYea{
+			background-color: @firmYea;
+		}
+		.leanYea{
+			background-color: @leanYea;
+		}
+		.leanNay{
+			background-color: @leanNay;
+		}
+		.firmNay{
+				background-color: @firmNay;
+		}
+		.unknown{
+			background-color: @unknown;
+		}
+		.wc-line{
+			background-color: @label;
+			height:105px;
+			&.filibuster{
+				top:55px;
+				height:50px;
+				background-color:@fili;
+			}
+		}
+	}
+
+	.wc-legend{
+		position:relative;
+		font-size: 14px;
+		.center{
+			text-align: center;
+		}
+		.clear{
+			clear:both;
+		}
+		.pull-left{
+			float:left;
+		}
+		.pull-right{
+			float:right;
+		}
+		.fili{
+			color:@fili;
+			position:absolute;
+			top:0;
+			padding: 0 0 0 58%;
+			margin:0;
+		}
+		.label{
+			color:@label;
+			font-size: 12px;
+			padding-top: 1px;
+		}
+		.firms{
+			margin-bottom: 7px;
+		}
+		.box{
+			width:15px;
+			height:15px;
+			margin:0px 5px;
+			&.yea{
+				background-color: @firmYea;
+				margin-left: 0;
+			}
+			&.lean-yea{
+				background-color: @leanYea;
+				margin-left: 0;
+			}
+			&.lean-nay{
+				background-color: @leanNay;
+				margin-right: 0;
+			}
+			&.nay{
+				background-color: @firmNay;
+				margin-right: 0;
+			}
+		}
+	}
+}
