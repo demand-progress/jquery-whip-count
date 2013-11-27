@@ -2,6 +2,8 @@
 
 A jQuery pluggin + CSS to create a Senate and/or House of Representatives whip count visualization
 
+![jquery-whip-count](https://raw.github.com/demand-progress/jquery-whip-count/master/examples/example.jpg "jquery-whip-count example")
+
 ## Include
 ```
 <script src="whip-count.min.js"></script>
